@@ -45,7 +45,7 @@ touch "/home/$app/.ssh/authorized_keys" && chmod 600 "/home/$app/.ssh/authorized
 
 mkdir "/home/$app/repos" && chmod 700 "/home/$app/repos"
 
-chown -R $app:www-data "/home/$app"
+chown -R $app:$app "/home/$app"
 
 chmod 700 "/home/$app/app/helpers/shells/"*
 
